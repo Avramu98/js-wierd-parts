@@ -1,0 +1,146 @@
+body {
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    background-image: url('./assets/background.png');
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 20px;
+    background-size: 300px;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;
+    align-items: center;
+    margin: 50px auto;
+    border-bottom: 1px solid black;
+}
+
+.navbar > li {
+    margin: 0;
+    max-width: 100px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.main-content {
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+footer > * {
+    font-size: 20px;
+}
+
+.images-container {
+    width: fit-content;
+}
+
+.quiz-container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz-container > h1 {
+    text-align: center;
+}
+
+#start-quiz {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.question-list-container {
+    width: 100%;
+    margin: 30px 0;
+    display: none;
+}
+
+.question-list-container > ul > li {
+    /* border: 1px solid blue; */
+}
+
+.user-input {
+    width: 100%;
+    min-height: 50px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.answer-container {
+    display: none;
+}
+
+.good-answer {
+    color: green;
+}
+
+#finish-quiz {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    margin: 50px 0;
+}

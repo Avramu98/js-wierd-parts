@@ -1,0 +1,22 @@
+.main-content {
+    border: none;
+    align-items: unset;
+} 
+
+.terms-container {
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.term-name {
+    color: red;
+    margin: 0;
+}
+
+.term-definition {
+    margin: 0;
+}
