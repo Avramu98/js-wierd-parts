@@ -12,7 +12,6 @@ const handlePictureQuestion = (parentElement, image) => {
   const questionPictureElement = buildElement('img', 'class', 'question-picture');
   questionPictureElement.src = image;
   parentElement.appendChild(questionPictureElement);
-  // parentElement.insertBefore(questionNameElement, questionPictureElement);
 };
 
 const handleCheckAnswer = (id, inputValue, inputContainer, answerContainer, userAnswer) => {

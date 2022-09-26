@@ -28,7 +28,7 @@ function getSpecificData() {
       return {
         pictureBasedInformation: true,
         mainData: typesAndOperatorsDataArr,
-        quiz: []
+        quiz: shuffleArray(typesAndOperatorsQuizArr)
       }
     } else if (isSpecificPage(APP_PAGES.OBJECTS_AND_FUNCTIONS)) {
       return {
