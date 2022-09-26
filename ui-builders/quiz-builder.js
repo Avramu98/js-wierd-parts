@@ -63,6 +63,7 @@ const quizBuilder = (quizes) => {
       userInputContainerElement.appendChild(checkAnswerButton);
       quizSectionElement.append(questionContainerElement, answerContainerElement, userInputContainerElement);
     } else {
+      quizSectionElement.append(questionContainerElement);
       prepareFrame(codeSnippetFrame, questionContainerElement);
     }
     quizListElement.appendChild(quizSectionElement);
