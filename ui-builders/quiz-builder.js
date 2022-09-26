@@ -8,11 +8,11 @@ const handleStartQuiz = (bluredElement, displayedElement, disabledElement) => {
   disabledElement.style.color = "red";
 };
 
-const handlePictureQuestion = (parentElement, image, questionNameElement) => {
+const handlePictureQuestion = (parentElement, image) => {
   const questionPictureElement = buildElement('img', 'class', 'question-picture');
   questionPictureElement.src = image;
   parentElement.appendChild(questionPictureElement);
-  parentElement.insertBefore(questionNameElement, questionPictureElement);
+  // parentElement.insertBefore(questionNameElement, questionPictureElement);
 };
 
 const handleCheckAnswer = (id, inputValue, inputContainer, answerContainer, userAnswer) => {
@@ -47,7 +47,7 @@ const quizBuilder = (quizes) => {
     const questionNameElement = buildElement('h2', null, null, question);
     questionContainerElement.appendChild(questionNameElement);
 
-    if (questionImage) handlePictureQuestion(questionContainerElement, questionImage, questionNameElement);
+    if (questionImage) handlePictureQuestion(questionContainerElement, questionImage);
 
     if (!codeSnippetFrame) {
       const answerContainerElement = buildElement('div', 'class', 'answer-container');
@@ -61,11 +61,10 @@ const quizBuilder = (quizes) => {
       answerContainerElement.append(userAnswerElement, goodAnswerElement);
       userInputContainerElement.appendChild(inputElement);
       userInputContainerElement.appendChild(checkAnswerButton);
-      quizSectionElement.append( answerContainerElement, userInputContainerElement);
+      quizSectionElement.append(questionContainerElement, answerContainerElement, userInputContainerElement);
     } else {
       prepareFrame(codeSnippetFrame, questionContainerElement);
     }
-    quizSectionElement.append(questionContainerElement);
     quizListElement.appendChild(quizSectionElement);
   });
 

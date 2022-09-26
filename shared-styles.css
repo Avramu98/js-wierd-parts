@@ -117,10 +117,6 @@ footer > * {
     display: none;
 }
 
-.question-list-container > ul > li {
-    /* border: 1px solid blue; */
-}
-
 .user-input {
     width: 100%;
     min-height: 50px;
