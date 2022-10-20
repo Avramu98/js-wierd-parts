@@ -59,6 +59,38 @@ var terminologyDataArr = [
         title: "Coercion",
         description: "means converting a value from one type to another.",
     },
+    {
+        title: "Namespace",
+        description: "a container for variables and functions (to keep the variables and functions with the same name separate).",
+    },
+    {
+        title: "First class functions",
+        description: "means that everything you can do with other type (objects, strings, numbers etc) you can do with functions. Assign them to variables, pass them around, create them on the fly.",
+    },
+    {
+        title: "Expression",
+        description: "a unit of code that results in a value.",
+    },
+    {
+        title: "Mutate",
+        description: "to change something (mutating an object by adding a property, removing a property, changing a property).",
+    },
+    {
+        title: "Arguments",
+        description: "are the parameter you pass to a function. JS gives you a keyword which contains them all (is set up by the JS engine 'arguments').",
+    },
+    {
+        title: "Whitespace",
+        description: "means invisible characters that create literal space in your written code.",
+    },
+    {
+        title: "Callback",
+        description: "means a function you give to another function to be run when the other function is finished.",
+    },
+    {
+        title: "Currying",
+        description: "means creating a copy of a function but with preset parameters",
+    },
 ]
 
 var terminologyQuizArr = terminologyDataArr.map((term, key) => {

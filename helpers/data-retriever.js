@@ -34,7 +34,7 @@ function getSpecificData() {
       return {
         pictureBasedInformation: true,
         mainData: objectsAndFunctionsDataArr,
-        quiz: shuffleArray(objectsAndFunctionsQuizArr),
+        quiz: []
       };
     } else {
       return {
