@@ -40,5 +40,3 @@ var b = function() {}; //! f() {} empty function | ANY FUNCTION YOU CREATE WILL 
 //! ALL FUNCTIONS WILL HAVE ACCESS TO THIS proto METHODS AND PROPERTIES for example .bind .call .apply
 
 var c = []; //! []
-
-fetch('https://api.liveclass.ro')
